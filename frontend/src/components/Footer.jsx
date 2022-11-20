@@ -2,64 +2,39 @@ import { Profiles } from '../enums/social-profiles';
 
 const Footer = () => {
     return (
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
-            <div classNameName="col-md-4 d-flex align-items-center">
+        <div className="footer">
+            <p>© 2022 MelodyML</p>
+            <div className="footer-links">
                 <a
-                    href="/"
-                    className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+                    href={Profiles.WEBSITE}
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    <svg className="bi" width="30" height="24"></svg>
+                    kradriff.com
                 </a>
-                <span className="mb-3 mb-md-0 text-muted">© 2022 MelodyML</span>
+                <a
+                    href={Profiles.SPOTIFY}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="images/spotify-icon.png"></img>
+                </a>
+                <a
+                    href={Profiles.APPLE_MUSIC}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="images/apple-music-icon.png"></img>
+                </a>
+                <a
+                    href={Profiles.INSTAGRAM}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="images/instagram-icon.png"></img>
+                </a>
             </div>
-
-            <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li className="ms-3">
-                    <a
-                        className="text-muted"
-                        href={Profiles.WEBSITE}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        kradriff.com
-                        <svg className="" width="24" height="24"></svg>
-                    </a>
-                </li>
-                <li className="ms-3">
-                    <a
-                        className="text-muted"
-                        href={Profiles.SPOTIFY}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Spotify
-                        <svg className="" width="24" height="24"></svg>
-                    </a>
-                </li>
-                <li className="ms-3">
-                    <a
-                        className="text-muted"
-                        href={Profiles.APPLE_MUSIC}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Apple Music
-                        <svg className="" width="24" height="24"></svg>
-                    </a>
-                </li>
-                <li className="ms-3">
-                    <a
-                        className="text-muted"
-                        href={Profiles.INSTAGRAM}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Instagram
-                        <svg className="" width="24" height="24"></svg>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+        </div>
     );
 };
 

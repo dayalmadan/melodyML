@@ -1,0 +1,64 @@
+/* header styles */
+.header {
+    background-color: #29434e; 
+    height: 100px;
+}
+
+.header h1{
+    padding-top: 2%;
+    margin: 0;
+}
+
+.description {
+    width: 24%;
+    margin: 2% 0 4% 2%;
+    text-align: left;
+    font-size: large;
+
+}
+
+/* tempo slider styles */
+.tempo-container {
+    display: flex;
+    background-color: #819ca9;
+    margin: 0 20% 0 20%;
+}
+
+.tempo-text {
+    padding: .5% 0 0 1% ;
+    color: "#0f3460";
+    font-weight: 600;
+}
+
+/* footer styles */
+.footer {
+    background-color: #718792;
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color:#c4c5c7; 
+}
+
+a, a:link, a:visited {
+    color: #c4c5c7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+.footer img {
+    height: auto;
+    max-width: 1.5%;
+    padding: 0 0 0 1%;
+}
+
+.footer p {
+    margin-bottom: 0.5%;
+}
+
+.footer-links {
+    margin-bottom: .25%;
+}
